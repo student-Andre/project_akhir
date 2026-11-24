@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Sinaw IT — Dashboard belajar</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2443D6}a:hover{color:#1A33A8}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161C; background: #F6F7FB; font-size: 16px; line-height: 1.5; display: flex; flex-wrap: wrap; min-height: 1100px">
+
+<!-- MENU SAMPING (KD-08: menu sedikit, konsisten) -->
+<aside style="flex: 1 1 220px; max-width: 260px; background: #FFFFFF; border-right: 1px solid #E4E7EF; padding: 24px 16px; display: flex; flex-direction: column; gap: 6px">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #14161C; font-weight: 800; font-size: 19px; padding: 0 10px 18px">
+<span style="width: 34px; height: 34px; border-radius: 10px; background: #2443D6; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px">S</span>Sinaw IT</a>
+<a href="#ringkasan" style="text-decoration: none; padding: 12px 14px; border-radius: 10px; background: #EAEEFF; color: #2443D6; font-weight: 700">Ringkasan</a>
+<a href="#jalur" style="text-decoration: none; padding: 12px 14px; border-radius: 10px; color: #3A4050; font-weight: 600">Jalur belajar</a>
+<a href="#latihan" style="text-decoration: none; padding: 12px 14px; border-radius: 10px; color: #3A4050; font-weight: 600">Bank soal &amp; simulasi</a>
+<a href="#tanya" style="text-decoration: none; padding: 12px 14px; border-radius: 10px; color: #3A4050; font-weight: 600">Tanya tutor / AI</a>
+<a href="#unduhan" style="text-decoration: none; padding: 12px 14px; border-radius: 10px; color: #3A4050; font-weight: 600">Unduhan offline</a>
+<div style="margin-top: auto; padding: 16px 14px; border-radius: 12px; background: #FFF4D1; font-size: 14px"><strong>Paket Gratis</strong><br>Tanya AI: 3 dari 10 hari ini<br><a href="Main.dc.html#harga" style="font-weight: 700">Lihat paket Pro</a></div>
+</aside>
+
+<!-- KONTEN -->
+<main style="flex: 999 1 560px; min-width: 0; padding: 28px clamp(16px, 3vw, 40px); display: flex; flex-direction: column; gap: 24px">
+<div id="ringkasan" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+<div><h1 style="margin: 0; font-size: 32px; line-height: 1.1; font-weight: 800">Halo, [Nama]</h1><p style="margin: 4px 0 0; color: #545B6B">Lanjutkan dari modul terakhir. Target minggu ini: 3 modul.</p></div>
+<a href="#jalur" style="background: #2443D6; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 12px">Lanjut belajar</a>
+</div>
+
+<!-- KARTU RINGKAS: progress + gamifikasi (KD-01, KD-03) -->
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 200px; background: #FFFFFF; border-radius: 16px; padding: 20px; border: 1px solid #E4E7EF"><div style="color: #545B6B; font-size: 14px">Kemajuan jalur</div><div style="font-size: 32px; font-weight: 800">62%</div><div style="height: 8px; background: #E6EAF5; border-radius: 99px; margin-top: 8px"><div style="width: 62%; height: 100%; background: #2443D6; border-radius: 99px"></div></div></div>
+<div style="flex: 1 1 200px; background: #FFFFFF; border-radius: 16px; padding: 20px; border: 1px solid #E4E7EF"><div style="color: #545B6B; font-size: 14px">Target minggu ini</div><div style="font-size: 32px; font-weight: 800">2 / 3 modul</div><div style="font-size: 14px; color: #545B6B">tersisa 1 modul</div></div>
+<div style="flex: 1 1 200px; background: #FFFFFF; border-radius: 16px; padding: 20px; border: 1px solid #E4E7EF"><div style="color: #545B6B; font-size: 14px">Skor latihan rata-rata</div><div style="font-size: 32px; font-weight: 800">78</div><div style="font-size: 14px; color: #1F7A4D; font-weight: 700">naik 6 dari minggu lalu</div></div>
+<div style="flex: 1 1 200px; background: #14161C; color: #FFFFFF; border-radius: 16px; padding: 20px"><div style="color: #C9CEDA; font-size: 14px">Poin &amp; runtun</div><div style="font-size: 32px; font-weight: 800">340 poin</div><div style="font-size: 14px; color: #FFC530; font-weight: 700">Runtun 7 hari · peringkat 12</div></div>
+</div>
+<p style="margin: -12px 0 0; font-size: 13px; color: #545B6B">Angka contoh untuk kerangka.</p>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+<!-- JALUR BELAJAR (KD-04, KD-06) -->
+<section id="jalur" style="flex: 3 1 420px; background: #FFFFFF; border-radius: 16px; padding: 22px; border: 1px solid #E4E7EF; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap"><h2 style="margin: 0; font-size: 21px; font-weight: 800">Dasar Pemrograman Web</h2><span style="font-size: 14px; color: #545B6B">8 modul · Pemula</span></div>
+<sc-for list="{{modules}}" as="m" hint-placeholder-count="8">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; border-radius: 12px; background: {{m.bg}}">
+<span style="width: 28px; font-weight: 800; color: #545B6B">{{m.n}}</span>
+<span style="flex: 1 1 200px; font-weight: 600">{{m.title}}</span>
+<span style="font-size: 13px; font-weight: 700; color: {{m.color}}; white-space: nowrap">{{m.status}}</span>
+<button type="button" aria-label="Unduh modul untuk offline" style="width: 44px; height: 44px; border-radius: 10px; border: 1px solid #CBD2E3; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A4050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"></path></svg></button>
+</div>
+</sc-for>
+</section>
+
+<!-- PANEL TANYA AI (KD-02) -->
+<section id="tanya" style="flex: 2 1 320px; background: #FFFFFF; border-radius: 16px; padding: 22px; border: 1px solid #E4E7EF; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 21px; font-weight: 800">Tanya tutor / AI</h2>
+<p style="margin: 0; font-size: 14px; color: #545B6B">Konteks: Modul 4 · CSS layout</p>
+<div style="align-self: flex-end; max-width: 85%; background: #2443D6; color: #FFFFFF; padding: 12px 14px; border-radius: 14px 14px 4px 14px">Kenapa justify-content tidak membuat elemen ke tengah?</div>
+<div style="align-self: flex-start; max-width: 90%; background: #F2F5FF; padding: 12px 14px; border-radius: 14px 14px 14px 4px">Cek apakah induknya sudah display: flex. Lihat juga bagian 4.2 di modul ini.<br><a href="#jalur" style="font-weight: 700; font-size: 14px">Buka bagian 4.2</a></div>
+<div style="display: flex; gap: 8px; margin-top: 6px">
+<label for="tanya-input" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Tulis pertanyaan</label>
+<input id="tanya-input" type="text" placeholder="Tulis pertanyaan…" style="flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #CBD2E3; border-radius: 10px">
+<button type="button" style="font: inherit; font-weight: 700; padding: 0 18px; min-height: 44px; border: 0; border-radius: 10px; background: #2443D6; color: #FFFFFF; cursor: pointer">Kirim</button>
+</div>
+<button type="button" style="font: inherit; font-weight: 600; font-size: 14px; min-height: 44px; border: 1px solid #CBD2E3; border-radius: 10px; background: #FFFFFF; cursor: pointer">Teruskan ke tutor</button>
+<a href="#tanya" style="font-size: 14px; font-weight: 600">Riwayat pertanyaan (12)</a>
+</section>
+</div>
+
+<!-- LATIHAN & SIMULASI (KD-05, KD-09) -->
+<section id="latihan" style="background: #FFFFFF; border-radius: 16px; padding: 22px; border: 1px solid #E4E7EF; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 21px; font-weight: 800">Bank soal &amp; simulasi ujian</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<sc-for list="{{drills}}" as="d" hint-placeholder-count="3">
+<div style="flex: 1 1 240px; border: 1px solid #E4E7EF; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+<strong>{{d.title}}</strong>
+<span style="font-size: 14px; color: #545B6B">{{d.meta}}</span>
+<a href="#latihan" style="font-weight: 700; padding-top: 6px">{{d.cta}}</a>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section id="unduhan" style="background: #FFFFFF; border-radius: 16px; padding: 18px 22px; border: 1px solid #E4E7EF; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+<div><strong>Unduhan offline</strong><div style="font-size: 14px; color: #545B6B">2 modul tersimpan di perangkat · kemajuan tersinkron saat online</div></div>
+<a href="#jalur" style="font-weight: 700">Kelola unduhan</a>
+</section>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const S = {
+      done: { status: 'Selesai', color: '#1F7A4D', bg: '#F6F7FB' },
+      now: { status: 'Sedang dipelajari', color: '#2443D6', bg: '#EAEEFF' },
+      todo: { status: 'Belum', color: '#545B6B', bg: '#FFFFFF' }
+    };
+    const list = [
+      ['Pengenalan web & cara kerja browser', 'done'],
+      ['HTML & struktur halaman', 'done'],
+      ['CSS dasar: warna, teks, box model', 'done'],
+      ['CSS layout: flex & grid', 'now'],
+      ['Desain responsif', 'todo'],
+      ['JavaScript dasar', 'todo'],
+      ['DOM & interaksi', 'todo'],
+      ['Proyek akhir: halaman portofolio', 'todo']
+    ];
+    return {
+      modules: list.map((x, i) => Object.assign({ n: String(i + 1), title: x[0] }, S[x[1]])),
+      drills: [
+        { title: 'Latihan Modul 4', meta: '15 soal · tanpa batas waktu', cta: 'Kerjakan' },
+        { title: 'Simulasi UTS Pemrograman Web', meta: '40 soal · 60 menit', cta: 'Mulai simulasi' },
+        { title: 'Evaluasi adaptif (Pro)', meta: 'Soal menyesuaikan tingkat pemahaman', cta: 'Lihat paket Pro' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
